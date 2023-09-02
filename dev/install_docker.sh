@@ -10,7 +10,7 @@ sudo apt-get install -y docker-ce docker-ce-cli containerd.io
 
 # Adjust permissions for Docker socket
 sudo chmod 666 /var/run/docker.sock
-systemctl restart docker.service
+sudo systemctl restart docker.service
 
 # Install Docker Compose
 sudo curl -L "https://github.com/docker/compose/releases/download/v2.0.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
