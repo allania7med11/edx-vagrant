@@ -22,7 +22,8 @@ Vagrant.configure("2") do |config|
   config.vm.network "forwarded_port", guest: 2000, host: 2000
   config.vm.network "forwarded_port", guest: 1993, host: 1993
   config.vm.network "forwarded_port", guest: 1995, host: 1995
-
+   
+  config.vm.provision "shell", path: "make_scripts_executable.sh"
   config.vm.provision "shell", path: "dev/install_docker.sh"
   config.vm.provision "shell", path: "dev/install_tutor.sh"
   config.vm.provision "shell", path: "dev/run_project.sh"

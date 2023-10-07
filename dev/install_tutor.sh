@@ -1,4 +1,5 @@
 #!/bin/bash
+echo "****Install Tutor****"
 mkdir -p ~/openedx
 cd ~/openedx
 sudo apt update
@@ -9,4 +10,5 @@ python3.8 -m venv tutor-venv
 git clone --branch=nightly https://github.com/overhangio/tutor.git
 pip install -e "./tutor[full]"
 pip install -r tutor/requirements/dev.txt
+echo "****Run Tutor in dev mode****"
 tutor dev launch
