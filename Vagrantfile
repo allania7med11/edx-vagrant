@@ -9,8 +9,6 @@ Vagrant.configure("2") do |config|
     v.memory = 20000
     v.cpus = 4
   end
-  config.vm.network "public_network", ip: "192.168.1.10"
-  config.dns.patterns = ["local.overhang.io","studio.local.overhang.io","apps.local.overhang.io"]
   config.vm.network "forwarded_port", guest: 80, host: 80
   config.vm.network "forwarded_port", guest: 443, host: 443
   config.vm.network "forwarded_port", guest: 8000, host: 8000

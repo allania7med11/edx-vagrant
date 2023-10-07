@@ -8,4 +8,3 @@
 Before getting started, make sure you have the following prerequisites installed on your system:
 
 - [Vagrant](https://www.vagrantup.com/)
-- [vagrant-dns](https://github.com/BerlinVagrant/vagrant-dns) 
